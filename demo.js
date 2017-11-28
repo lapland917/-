@@ -5,7 +5,7 @@ fs.exists("dirName",function(exists){
   }
   else{
         var dirName = process.argv[2] // 你传的参数是从第 2 个开始的
-        process.chdir("C:\\Users\\leeHo\\desktop") // cd ~/Desktop
+        
         fs.mkdirSync("./" + dirName) // mkdir $1
         process.chdir("./" + dirName) // cd $1
         fs.mkdirSync('css') // mkdir css
