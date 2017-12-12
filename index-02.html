@@ -9,12 +9,20 @@
         *{
           font-family: '微软雅黑';
         }
+
+        a{
+          text-decoration: none;
+        }
+        a:hover{
+          box-shadow: 2px 2px 2px 2px rgb(175, 175, 175);
+        }
         .btn-01,.btn-02,.btn-03,.btn-04,.btn-05{
             display: inline-block;
             font-size: 30px;
             margin: 20px 5px;
         }
-        .btn-01{
+        .btn-01 a{
+            display: inline-block;
             width: 120px;
             height: 83px;
             text-align: center;
@@ -23,7 +31,8 @@
             border-radius:5px;
             color: white;
           }
-          .btn-02{
+          .btn-02 a{
+            display: inline-block;
             width: 143px;
             height: 83px;
             text-align: center;
@@ -33,7 +42,8 @@
             color: rgb(0, 0, 0);
           }
 
-          .btn-03{
+          .btn-03 a{
+            display: inline-block;
             width: 159px;
             height: 83px;
             text-align: center;
@@ -43,7 +53,8 @@
             color: rgb(0, 0, 0);
           }
 
-          .btn-04{
+          .btn-04 a{
+            display: inline-block;
             width: 97px;
             height: 83px;
             text-align: center;
@@ -54,7 +65,8 @@
             color: white;
           }
 
-          .btn-05{
+          .btn-05 a{
+            display: inline-block;
             width: 136px;
             height: 83px;
             text-align: center;
@@ -67,10 +79,10 @@
     </style>
 </head>
 <body>
-    <div class="btn-01"><span>steal</span></div>
-    <div class="btn-02"><span>yellow</span></div>
-    <div class="btn-03"><span>orange</span></div>
-    <div class="btn-04"><span>red</span></div>
-    <div class="btn-05"><span>green</span></div>
+    <div class="btn-01"><span><a href="#">steal</a></span></div>
+    <div class="btn-02"><span><a href="#">yellow</a></span></div>
+    <div class="btn-03"><span><a href="#">orange</a></span></div>
+    <div class="btn-04"><span><a href="#">red</a></span></div>
+    <div class="btn-05"><span><a href="#">green</a></span></div>
 </body>
 </html>
