@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+  body{
+    background-color: rgb(109, 109, 109);
+  }
+    .pratent{
+  width:100px;
+  height:100px;
+  margin: 50px auto;
+  border-radius:100%;
+  position:relative;
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%);
+}
+
+.child1{
+  width:50px;
+  height:50px;
+ 
+  border-radius:100%;
+  position:absolute;
+  top:25px;
+  background-color:white;
+}
+
+.child2{
+  width:50px;
+  height:50px;
+  border-radius:100%;
+  position:absolute;
+  top:25px;left:50px;
+  background-color:black;
+}
+
+.one{
+  width:15px;
+  height:15px;
+  border-radius:100%;
+  position:absolute;
+  top:8px;left:15px;
+  background-color:black;
+}
+
+.two{
+  width:15px;
+  height:15px;
+  border-radius:100%;
+  position:absolute;
+  top:18px;left:18px;
+  background-color:white;
+}
+  </style>
+</head>
+<body>
+  <div class="pratent">
+     <div class="child1">
+       <div class="one"></div>
+     </div>
+     <div class="child2">
+       <div class="two"></div>
+     </div>
+  </div>
+</body>
+</html>
