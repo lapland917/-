@@ -7,11 +7,12 @@
   <style>
   body{
     background-color: rgb(109, 109, 109);
+    text-align: center;  
   }
     .pratent{
   width:100px;
   height:100px;
-  margin: 50px auto;
+  margin: 25px auto;
   border-radius:100%;
   position:relative;
   background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%);
@@ -53,9 +54,50 @@
   top:18px;left:18px;
   background-color:white;
 }
+
+#yinyang{
+  width:100px;
+  height:50px;
+  border-radius:100%;
+  border-color:black;
+  border-style:solid;
+  border-width:1px 1px 50px 1px;
+  background-color:white;
+  position:relative;
+  margin: 25px auto;
+}
+
+#yinyang::before{
+  content:'';
+  display:block;
+  width:20px;
+  height:20px;
+  border-radius:100%;
+  background-color:white;
+  position:absolute;
+  top:25px;
+  border:15px solid black;
+}
+
+#yinyang::after{
+  content:'';
+  display:block;
+  width:20px;
+  height:20px;
+  border:15px solid white;
+  border-radius:100%;
+  background-color:black;
+  position:absolute;
+  top:25px;left:50px
+}
+
+h2{
+  display: inline;
+}
   </style>
 </head>
 <body>
+    <h2>笨办法做的</h2>
   <div class="pratent">
      <div class="child1">
        <div class="one"></div>
@@ -64,5 +106,7 @@
        <div class="two"></div>
      </div>
   </div>
+  <h2>after/before做的</h2>
+  <div id="yinyang"></div>
 </body>
 </html>
