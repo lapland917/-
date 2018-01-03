@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="zhangsan">
+			
+	</div>
+	<script type="text/javascript">
+	  // 把键盘上的字母分成3个数组存入数组keys
+		var keys = [
+			['q','w','e','r','t','y','u','i','o','p'],
+			['a','s','d','f','g','h','j','k','l'],
+			['z','x','c','v','b','n','m']
+		]
+
+		  var index = 0
+			  while(index < keys.length){
+			  	div1 = document.createElement('div')  //创建一个div
+			    zhangsan.appendChild(div1) //把div放入id为zhangsan的div内
+			      var row = keys[index] //获取数组keys的第n层数字
+			      var index2 = 0
+			      while(index2 < row.length){
+			    	kbd1 = document.createElement('kbd')  
+			        div1.appendChild(kbd1)
+			       	kbd1.textContent = row[index2]
+			        index2 = index2 + 1
+			    }
+			    index = index + 1
+			  }
+		  	
+		  
+	</script>
+</body>
+
+</html>
