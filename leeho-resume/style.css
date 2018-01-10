@@ -272,9 +272,152 @@ main{
   background-image: url(./image/vue.png)
 }
 
+.Demo>h3{
+  text-align: center;
+  color: rgb(75, 75, 75);
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+.Demo>h3:after{
+  display: block;
+  content: '';
+  border-top: 2px solid #1296db;
+  width: 40px;
+  margin: 10px auto;
+}
+
+.Demo{
+  min-width: 960px;
+  margin: 0 auto;
+}
+
+.DemoBar{
+ 
+  width: 960px;
+  margin: 0 auto;
+}
+
+.DemoBar>li{
+  float: left;
+  width: 318px;
+  height: 340px;
+  transition:all 0.6s;
+}
+
+.icon-html{
+  color: orange;
+}
+
+.icon-js{
+  color:blue;
+}
+
+.DemoBar li:nth-child(1){
+  
+}
+
+.DemoBar>.Demo-01{
+  /* border: 1px solid rgba(131, 131, 131, 0.6) ; */
+  text-align: center;
+  position: relative;
+  background-color:white;
+}
+
+.Demo-01>img{
+  width: 318px;
+  height: 170px;
+}
+
+.Demo-01>h4{
+  margin-top:20px;
+}
 
 
+.DemoBar>li:nth-child(1):hover{
+  transform: translateY(-10px);
+  box-shadow: 1px 4px 5px 2px rgba(131, 131, 131, 0.6);
+  transition:all 0.6s;
+}
 
+.DemoBar li:nth-child(2){
+  
+}
+
+.DemoBar>li:nth-child(2):hover{
+  transform: translateY(-10px);
+  box-shadow: 1px 4px 5px 2px rgba(131, 131, 131, 0.6);
+  transition:all 0.6s;
+}
+
+.DemoBar>li:nth-child(3){
+  
+}
+
+.DemoBar>li:nth-child(3):hover{
+  transform: translateY(-10px);
+  box-shadow: 1px 4px 5px 2px rgba(131, 131, 131, 0.6);
+  transition:all 0.6s;
+}
+
+.Demo-01-skill{
+  width: 208px;
+  margin: 20px auto;
+  
+}
+
+.Demo-01-skill>li{
+  float: left;
+  height: 32px;width: 32px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.Demo-01-skill>li:nth-child(1){
+  background-image: url(./image/js.png);
+  background-size: cover;
+}
+
+.Demo-01-skill>li:nth-child(2){
+  background-image: url(./image/html.png);
+  background-size: cover;
+}
+
+.Demo-01-skill>li:nth-child(3){
+  background-image: url(./image/css.png);
+  background-size: cover;
+}
+.Demo-01-skill>li:nth-child(4){
+  background-image: url(./image/tree.png);
+  background-size: cover;
+}
+
+
+.Demo-01>.lookCode{
+ 
+  position: absolute;
+  bottom:10px;left: 20px;
+  /* border: 1px solid black; */
+  font-size: 10px;
+  padding: 5px 5px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: #1296db;
+  color: white;
+}
+
+.Demo-01>.lookWeb{
+ 
+  position: absolute;
+  bottom:10px;right: 20px;
+  
+  font-size: 10px;
+  padding: 5px 5px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: #1296db;
+  color: white;
+}
 
 
 
